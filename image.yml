@@ -10,6 +10,9 @@ upstream:
   version:
     type: github_release
     repo: bakito/adguardhome-sync
+    require_assets:
+      - asset: '^adguardhome\-sync_.*_linux_amd64\.tar\.gz$'
+      - asset: '^adguardhome\-sync_.*_linux_arm64\.tar\.gz$'
   notes:
     type: github_release
     repo: bakito/adguardhome-sync
